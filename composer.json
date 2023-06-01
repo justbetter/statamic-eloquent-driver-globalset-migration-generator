@@ -1,0 +1,39 @@
+{
+    "name": "justbetter/statamic-eloquent-driver-globalset-migration-generator",
+    "type": "package",
+    "description": "Creates a databaase migration when a new globalset is created",
+    "authors": [
+        {
+            "name": "Roy Duineveld",
+            "email": "royduineveld@gmail.com",
+            "homepage": "https://royduineveld.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "*",
+        "statamic/cms": "*",
+        "statamic/eloquent-driver": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustBetter\\StatamicEloquentDriverGlobalsetMigrationGenerator\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Eloquent Driver Globalset Migration Generator",
+            "description": "Creates a databaase migration when a new globalset is created"
+        },
+        "laravel": {
+            "providers": [
+                "JustBetter\\StatamicEloquentDriverGlobalsetMigrationGenerator\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}
