@@ -7,7 +7,7 @@ return new class extends Migration
 {
     public function up()
     {
-        DB::table(config('statamic.eloquent-driver.table_prefix', '').'global_sets')->insert(
+        DB::table(config('statamic.eloquent-driver.table_prefix', '') . 'global_sets')->insert(
             json_decode('{{ data }}', true)
         );
     }
