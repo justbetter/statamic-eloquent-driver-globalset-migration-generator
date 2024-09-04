@@ -5,7 +5,7 @@ When you're using the [Statamic Eloquent Driver](https://github.com/statamic/elo
 ## Installation
 
 ```
-composer require statamic-eloquent-driver-globalset-migration-generator
+composer require justbetter/statamic-eloquent-driver-globalset-migration-generator
 ```
 
 ## License
